@@ -1,0 +1,21 @@
+p {
+    color: rgb(35, 125, 204);
+}
+
+header {
+    border: 2px;
+    color: black;
+}
+
+
+button {
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+button:hover {
+    border-radius: 10px;
+    background-color: yellowgreen;
+}

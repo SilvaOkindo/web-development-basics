@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+           background-color: antiquewhite;
+        }
+
+        h1 {
+            color: yellow;
+            text-transform: capitalize;
+        }
+
+        h2 {
+            text-transform: capitalize;
+        }
+
+        img {
+            display: inline-block;
+        }
+        p {
+            display: inline-block;
+            flex: 1;
+        }
+
+      td {
+        border: 2px solid yellow;
+      }
+
+      .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      .side-content {
+        
+        width: 200px;
+        color: wheat;
+        padding: 8px;
+        background-color: brown;
+      }
+
+      #num1 {
+        display: block;
+        padding: 8px;
+        border: 2px solid blue;
+        border-radius: 3px;
+        font-size: 18px;
+        color: black;
+        margin-top: 4px;
+        margin-left: 20px;
+        margin-bottom: 4px;
+      }
+      #num2 {
+        display: block;
+        padding: 8px;
+        border: 2px solid blue;
+        border-radius: 3px;
+        font-size: 18px;
+        color: black;
+        margin-top: 4px;
+        margin-left: 20px;
+        margin-bottom: 4px;
+      }
+
+      #submit-button {
+        width: 140px;
+        padding: 8px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: blue;
+        border: 2px solid rgb(7, 7, 124);
+        border-radius: 8px;
+        margin-left: 80px;
+      }
+
+      .addition-form {
+        margin-left: 100px;
+        margin-top: 50px;
+        margin-bottom: 1000px;
+        background-color: rgb(232, 232, 248);
+        display: inline-block;
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+      #submit-button:hover {
+        opacity: 0.5;
+      }
+
+      #sum {
+        padding: 4px;
+        height: 20px;
+        width: 244px;
+        margin-top: 4px;
+        margin-left: 20px;
+        margin-bottom: 4px;
+        display: block;
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>
+        Welcome to Anna's kitchen
+    </h1>
+
+    <h2>
+        The home of the roast!
+    </h2>
+    <div class="main-content">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cum ea voluptatibus molestias unde similique a minima natus culpa ex nisi repudiandae iure, quisquam voluptates repellat quaerat dignissimos amet delectus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ex placeat ab quam ipsa iure perferendis explicabo veniam non unde beatae dicta vitae, debitis doloribus necessitatibus. Eaque provident quaerat a.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat blanditiis temporibus tenetur commodi itaque et rerum nam corporis qui suscipit, alias recusandae nobis nisi possimus quos asperiores aut iusto libero!
+        </p>
+       <div class="side-content">
+         <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit eaque obcaecati rerum tenetur repellat error voluptate nobis libero repellendus velit eligendi consequatur quis nihil natus itaque, amet similique et eos. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque nam consectetur quod saepe error aspernatur sed similique aperiam quo, deleniti sapiente incidunt et ea numquam vero pariatur temporibus unde?
+         </p>
+       </div>
+    </div>
+<table>
+    <tr>
+        <td>Food</td>
+        <td>Price</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid yellow;">Burger</td>
+        <td id="price">$12.0</td>
+    </tr>
+</table>
+
+    <div class="addition-form">
+        <h2>Adding 2 numbers using js</h2>
+       <input type="text" id="num1" placeholder="Enter first number">
+       <input type="text" id="num2" placeholder="Enter second number">
+     
+        <p id="sum"></p>
+       <button id="submit-button" onclick="add()">Add</button>
+    </div>
+
+    <script>
+        document.getElementById("price").innerHTML = 4;
+
+        function add() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let result = num1 + num2;
+            document.getElementById("sum").innerHTML = result;
+            console.log(result)
+        }
+       
+    </script>
+</body>
+</html>

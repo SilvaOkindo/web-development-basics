@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 20vh;
+    width: 20vw;
+    background-color: aqua;
+    animation: animate-box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes animate-box {
+    0% {
+        transform: translateX(200px);
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translateY(400px);
+    }
+}
