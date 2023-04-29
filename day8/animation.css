@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    padding: 50px 0 50px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    transition: background-color ease-in 50ms;
+}
+
+.container:hover {
+    background-color: aqua;
+    transition: color 200ms ease-out 50ms;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-left: 100px;
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 50ms;
+}
+
+.box:hover {
+    transform: scale(2, 2);
+    border-radius: 50%;
+
+}
