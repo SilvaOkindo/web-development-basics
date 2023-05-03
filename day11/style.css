@@ -1,0 +1,41 @@
+body {
+    background-color: #F1F5F9;
+}
+
+header {
+    background-color: white;
+    padding: 0.8rem 1.4rem;
+    min-width: 767px;
+}
+
+.btn {
+    background-color: #0185d4;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block; 
+    margin: 0 1.4rem;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.logo {
+    text-decoration: none;
+}
