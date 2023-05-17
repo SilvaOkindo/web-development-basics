@@ -1,0 +1,141 @@
+*{
+    background-color: #d5fff4;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    animation: move-box;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+@keyframes move-box {
+
+    from {
+        background-color: yellow;
+    }
+    
+    to {
+        background-color: red;
+    }
+}
+
+@keyframes animate-box{
+  from {
+    
+  }
+}
+
+
+.btn {
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 200px;
+    padding: 8px;
+    background-color: brown;
+    border: none;
+    border-radius: 10px;
+    animation: changeColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.btn:active {
+    border: none;
+    outline: none;
+}
+
+
+#id1 {
+    animation: changeColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes changeColor {
+
+  from {
+      color: green;
+  }
+  
+  to {
+      color: yellow;
+  }
+    
+}
+
+
+
+.rotate-box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: auto;
+    animation: rotate;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    display: flex;
+    align-items: center;
+  
+}
+
+.inner {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin: auto;
+    animation: rotate1;
+    animation-duration: 0.8s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+@keyframes rotate {
+
+  from{
+      transform: rotate(360deg);
+      background-color: red;
+     
+  }
+  
+  to{
+      transform: rotate(0);
+      background-color: green;
+      
+  }
+    
+}
+
+@keyframes rotate1 {
+
+  from{
+      transform: rotate(60deg);
+      background-color: red;
+  }
+  
+  to{
+      transform: rotate(0);
+      background-color: green;
+      
+  }
+    
+}

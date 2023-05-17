@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: #8098ff;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+#btn{
+    align-items: center;
+    padding: 16px;
+    margin: 20px;
+}
+
+
+button:hover{
+  
+}
+
+h3{
+    padding: 20px;
+    ffont-size: 38px;
+}
+
+
+#para{
+    color: #d5ffbf;
+}
+
+
+
+.title{
+    color: red;
+}
+
+.header{
+    font-size: 50px;
+}
+
+.header.title{
+    background-color: green;
+}
+
+
+.warning {font-weight: bold;} 
+
+.urgent {font-style: italic;} 
+
+.warning.urgent {background: silver;}
+
+
+p[class] {
+    text-transform: capitalize;
+    color: black;
+}
+
+
+
+h1[class]{
+    font-size: 40px;
+    color: purple;
+}

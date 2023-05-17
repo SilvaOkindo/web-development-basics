@@ -1,0 +1,44 @@
+.box{
+    margin: 100px;
+    width: 200px;
+    border: 4px ridge red;
+}
+
+
+img{
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #9180ff;
+    
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #95b7ff;
+    text-align: center;
+    font-family: aerial;
+}
+
+
+.name {
+    padding: 8px;
+    border: 1px solid green;
+    margin: 20px;
+    border-radius: 4px;
+    transition: border 1s;
+}
+
+.name:focus{
+    border: 1px solid green;
+    border-radius: 4px;
+}

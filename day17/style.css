@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+
+.box {
+    background-color: blueviolet;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-radius: 0% 100% 0% 100% / 26% 34% 66% 98% ;
+    transition: border-radius 800ms;
+    position: absolute;  
+    top: -100px;
+    right: -100px;
+}
+    
+
+

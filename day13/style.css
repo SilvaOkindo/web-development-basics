@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: yellowgreen;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 2em;
+}
+
+.inner {
+    background-color: aliceblue;
+    font-size: 18px;
+}
+
+.inner .rem{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.inner .em {
+    font-size: 1em;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+    background-color: rebeccapurple;
+    margin: 20px;
+    animation: shake;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 12px;
+}
+
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes change_color {
+    0% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: brown;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1.5, 1.5);
+    }
+    50% {
+        transform: scale(0, 0);
+    }
+
+    100% {
+        transform: scale(2,2);
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+
+    <style>
+        .conta {
+            width: 80%;
+            background-color: antiquewhite;
+            margin: auto;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(250, 156, 42);
+            margin: auto;
+            border-radius: 1px;
+            box-shadow:  0px 0px 10px   rgb(73, 72, 70);
+        }
+        .box1 {
+            background-color: aqua;
+            box-shadow: inset 0px 0px 10px 10px gray;
+            animation: rotate;
+            animation-duration: .5s;
+            animation-delay: 800ms;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        .box2 {
+            animation: boxShadow, rotate;
+            animation-duration: 0.8s;
+            animation-delay: 800ms;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        .box3 {
+            animation: moveBox 2s ease-out 0.8ms infinite alternate-reverse;
+            border-radius: 50%;
+        }
+
+        .box4 {
+            box-shadow: none;
+            animation: changeBorderRadius;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-delay: 80ms;
+            
+        }
+
+        @keyframes boxShadow {
+
+            0% {
+                box-shadow:  0px 0px 0px   rgb(73, 72, 70);
+            }
+
+            
+
+            100% {
+                box-shadow: 0px 0px 8px   rgb(73, 72, 70);
+                border-radius: 50%;
+            }
+            
+        }
+
+
+        @keyframes moveBox {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100px);
+            }
+
+
+            
+        }
+
+
+        @keyframes rotate {
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes changeBorderRadius {
+            from {
+                border-radius: 0;
+            }
+
+            to {
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conta">
+
+        <div class="box">
+
+        </div>
+
+        <div class="box box1">
+
+        </div>
+
+        <div class="box box2">
+
+        </div>
+
+        <div class="box box3">
+
+        </div>
+
+        <div class="box box4">
+
+        </div>
+
+    </div>
+</body>
+</html>
