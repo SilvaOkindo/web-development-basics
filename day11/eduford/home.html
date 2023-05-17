@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <section class="header">
@@ -18,7 +22,8 @@
                 <img src="images/logo.png">
             </a>
 
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -27,12 +32,15 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
             <h1>World's Biggest University</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam nulla pariatur blanditiis, vero magni qui, rerum mollitia eum dicta eos animi veniam alias.<br> Modi cupiditate distinctio exercitationem in consectetur!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam nulla pariatur blanditiis, vero
+                magni qui, rerum mollitia eum dicta eos animi veniam alias.<br> Modi cupiditate distinctio
+                exercitationem in consectetur!
             </p>
             <a href="" class="hero-btn">Visit Us To know more</a>
         </div>
@@ -45,16 +53,22 @@
         <div class="row">
             <div class="course-col">
                 <h3>Intermediate</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum, temporibus facilis eos aut cum deserunt saepe in incidunt iusto natus voluptate eius error voluptatem quaerat facere exercitationem quis? Eius?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum, temporibus facilis eos aut cum
+                    deserunt saepe in incidunt iusto natus voluptate eius error voluptatem quaerat facere exercitationem
+                    quis? Eius?</p>
             </div>
             <div class="course-col">
                 <h3>Degree</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum, temporibus facilis eos aut cum deserunt saepe in incidunt iusto natus voluptate eius error voluptatem quaerat facere exercitationem quis? Eius?</p>
-                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum, temporibus facilis eos aut cum
+                    deserunt saepe in incidunt iusto natus voluptate eius error voluptatem quaerat facere exercitationem
+                    quis? Eius?</p>
+
             </div>
             <div class="course-col">
                 <h3>Post Graduate</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum, temporibus facilis eos aut cum deserunt saepe in incidunt iusto natus voluptate eius error voluptatem quaerat facere exercitationem quis? Eius?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum, temporibus facilis eos aut cum
+                    deserunt saepe in incidunt iusto natus voluptate eius error voluptatem quaerat facere exercitationem
+                    quis? Eius?</p>
             </div>
         </div>
     </section>
@@ -63,31 +77,147 @@
 
     <section class="campus">
 
-        <h1>Our Camuses</h1>
+        <h1>Our Campuses</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-       <div class="row">
-        <div class="campus-col">
-            <img src="images/london.png">
-            <div class="layer">
-                <h3>LONDON</h3>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
             </div>
         </div>
-        <div class="campus-col">
-            <img src="images/newyork.png">
-            <div class="layer">
-                <h3>NEW YORK</h3>
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/washington.png">
-            <div class="layer">
-                <h3>WASHINGTON</h3>
-            </div>
-        </div>
-       </div>
-
     </section>
-    
+
+    <!-- our facilities -->
+    <section class="facility">
+
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World class library</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ex, omnis, maxime beatae excepturi
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ex, omnis, maxime beatae excepturi
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ex, omnis, maxime beatae excepturi
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- testmonials -->
+
+    <section class="testmonial">
+        <h1>What student say about our university</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur repellat dicta voluptatum
+                        libero deleniti voluptatem eveniet distinctio placeat temporibus sunt amet laborum consequatur
+                        deserunt id iure officia, quasi quas itaque.
+                    <h3>David Byer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user1.jpg">
+                <div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur repellat dicta voluptatum
+                        libero deleniti voluptatem eveniet distinctio placeat temporibus sunt amet laborum consequatur
+                        deserunt id iure officia, quasi quas itaque.
+                    <h3>David Byer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- call to action -->
+
+    <section class="cta">
+        <h1>
+            Enroll for our various online courses <br> anywhere from the world
+        </h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae rem. Officiis laboriosam
+            <br>dolor fugit accusamus
+        </p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart-o"></i> by silva</p>
+    </section>
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
 </body>
+
 </html>
